@@ -1,0 +1,36 @@
+configuration {
+    font: "JetBrains Mono Nerd Font Medium 18";
+
+    sidebar-mode: true;
+    hide-scrollbar: true;
+    disable-history: true ;
+    location: 0;
+
+    show-icons: true;
+    icon-theme: "Papirus";
+
+    modi: "drun,window,run,calc,emoji";
+    display-drun: "  Applications";
+    display-window: "  Window";
+    display-run: "  Run";
+    display-calc: "󰪚  Calc";
+    display-emoji: "󰞅  Emoji";
+    drun-display-format: "{icon} {name}";
+    
+    drun {
+        parse-user: true;
+        parse-system: true;
+    }
+
+    kb-remove-to-eol: "Control+Shift+e";
+    kb-accept-entry: "Return";
+    kb-row-up: "Up,Control+k";
+    kb-row-down: "Down,Control+j";
+    kb-remove-char-back: "BackSpace";
+    kb-mode-complete: "Control+Shift+space";
+    kb-row-left: "Control+h";
+    kb-row-right: "Control+l";
+}
+
+
+@theme "catppuccin-mocha"
