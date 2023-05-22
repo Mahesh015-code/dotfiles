@@ -1,0 +1,1 @@
+complete --command todocli.py --no-files --arguments "(env _TODOCLI.PY_COMPLETE=complete_fish _TYPER_COMPLETE_FISH_ACTION=get-args _TYPER_COMPLETE_ARGS=(commandline -cp) todocli.py)" --condition "env _TODOCLI.PY_COMPLETE=complete_fish _TYPER_COMPLETE_FISH_ACTION=is-args _TYPER_COMPLETE_ARGS=(commandline -cp) todocli.py"

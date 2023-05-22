@@ -1,0 +1,174 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  # Simple text replacement
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
+
+  # But matches can also be dynamic:
+
+  # Print the current date
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  # Print the output of a shell command
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo 'Hello from your shell'"
+
+  - trigger: ":hellof"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "figlet -f big 'Hello'"
+
+  # To code the qtile config
+  - trigger: ":udemy"
+    replace: "https://www.udemy.com/home/my-courses/learning/"
+
+  - trigger: ";typing"
+    replace: "https://www.edclub.com/sportal/"
+
+  # And much more! For more information, visit the docs: https://espanso.org/docs/
+
+  # Emojies
+
+  - trigger: ";inbox"
+    replace: "📥"
+
+  - trigger: ";sgreen"
+    replace: "🟩"
+
+  - trigger: ";sorange"
+    replace: "🟧"
+
+  - trigger: ";sred"
+    replace: "🟥"
+
+  - trigger: ";syellow"
+    replace: "🟨"
+
+  - trigger: ";sblack"
+    replace: "⬛"
+
+  - trigger: ";through"
+    replace: "💭"
+
+  - trigger: ";cons"
+    replace: "🚧"
+
+  - trigger: ";pin"
+    replace: "📌"
+
+  - trigger: ";mont"
+    replace: "🗻"
+
+  # - trigger: ";n1"
+  # replace: "Murugesan"
+
+  # - trigger: ";a1"
+  # replace: "733276083306"
+
+  - trigger: ";ad1"
+    replace: "no:78,pillayar koil street,Dharamapuram,pin:603003"
+
+  # - trigger: ";n2"
+  # replace: "Mahesh"
+
+  # - trigger: ";a2"
+  #   replace: "369149425828"
+
+  # - trigger: ";ad2"
+  #   replace: "no:78,pillayar koil street,Dharamapuram,pin:603003"
+
+  # - trigger: "01"
+  #   replace: "9841487497"
+
+  # - trigger: "02"
+  #   replace: "9047783853"
+
+  # - trigger: ";e1"
+  #   replace: "muru20037@gmail.com"
+
+  # - trigger: ";e2"
+  #   replace: "mah91177@gmail.com"
+
+  # - trigger: ";n3"
+  # replace: "Karthick S"
+  #
+  # - trigger: ";a3"
+  # replace: "754998301544"
+
+  # - trigger: ";ad3"
+  #   replace: "no:364,perumal koil street,krishanakarani,kancheepuram,pattipulam, Tamil nadu, pin: 603104"
+
+  - trigger: ";n1"
+    replace: "K. samundeeswari"
+
+  - trigger: ";n2"
+    replace: "Kumar"
+
+  - trigger: ";n3"
+    replace: "Varun Kumar"
+
+  - trigger: ";n4"
+    replace: "Dharun kumar"
+
+  - trigger: ";a1"
+    replace: "379983667265"
+
+  - trigger: ";a2"
+    replace: "85863031523"
+
+  - trigger: ";a3"
+    replace: "610708106342"
+
+  - trigger: ";a4"
+    replace: "222669229357"
+
+  - trigger: ";cd"
+    replace: "6071870005904443"
+
+  - trigger: ";num"
+    replace: "013"
+
+  # - trigger: ";adr"
+  # replace: "No 67, Pillaiyar Kovil street, Echur/Kuzhipanthandalam,Echur,Chengalpattu,Tamilnadu pin: 603105"
+
+  - trigger: ";d"
+    replace: "Chengalpatu"
+
+  # Templater obsidian
+  - trigger: ":tp"
+    replace: "<% tp. %>"
+
+  # Templater obsidian
+  - trigger: ":tp"
+    replace: "<% tp. %>"
+
+  # for an linux
+  - trigger: ";ps"
+    replace: "sudo pacman -S "
+  # Open wether api key
+  - trigger: ";owapi"
+    replace: "d815d6b2754358afe21b74f87340b736"
